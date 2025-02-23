@@ -1,0 +1,32 @@
+﻿@page "/login"
+
+@inject NavigationManager Navigation
+
+<PageTitle>Login</PageTitle>
+
+<style>
+    .auth-container {
+        /* Center the container horizontally on the page */
+        margin: 0 auto;
+        /* Width that will be shared by all buttons */
+        width: 250px;
+        /* Spacing between buttons */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .auth-container button {
+        /* Make each button fill the container's width */
+        width: 100%;
+    }
+</style>
+<div class="auth-container">
+    <a href="/api/auth/login/entra" class="btn btn-primary">Login with Knowit</a>
+    <a href="/api/auth/login/outlook" class="btn btn-primary">Login with Outlook</a>
+    <a href="/api/auth/login/discord" class="btn btn-primary">Login with Discord</a>
+</div>
+
+@code {
+
+}
